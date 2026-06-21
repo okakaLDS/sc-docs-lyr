@@ -40,11 +40,11 @@ theme:
         name: ライトモードに切り替え
   features:
     - navigation.top
-    - navigation.expand
     - navigation.sections
     - navigation.tracking
     - navigation.indexes
     - navigation.path
+    - navigation.prune
     - navigation.footer
     - navigation.instant
     - navigation.instant.progress
