@@ -3,11 +3,14 @@ title: "表紙"
 tags:
   - 機能定義書
 status: "未着手"
+function_id: "F001"
 ---
 
 # 表紙
 
 === "本文"
+
+    機能ID: F001（[システム機能一覧](../../../06-system-design-lists/01-system-function-list.md)の該当行と対応）
 
     （内容は今後作成）
 

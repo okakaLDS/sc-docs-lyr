@@ -9,7 +9,13 @@ status: "未着手"
 
 === "本文"
 
-    （内容は今後作成）
+    各機能には機能IDを付与し、[機能定義書](../08-system-function-design/01-function-spec/index.md)の
+    機能フォルダと1対1で対応させます。機能を追加した場合は、この表の行と
+    `08-system-function-design/01-function-spec/` 配下の機能フォルダを両方追加してください。
+
+    | 機能ID | 機能名 | 概要 | 機能定義書 |
+    |---|---|---|---|
+    | F001 | 機能A | （内容は今後作成） | [リンク](../08-system-function-design/01-function-spec/01-function-a/01-cover.md) |
 
 === "改定履歴"
 
