@@ -1,0 +1,93 @@
+site_name: 半導体顧客向け基本設計書
+site_url: https://okakaLDS.github.io/sc-docs-lyr/
+
+theme:
+  name: material
+  language: ja
+  logo: images/logo.png
+  favicon: images/favicon.png
+  icon:
+    admonition:
+      note: lucide/notepad-text
+      abstract: lucide/book-open-text
+      info: lucide/info
+      tip: lucide/lightbulb
+      success: lucide/circle-check-big
+      question: lucide/circle-help
+      warning: lucide/triangle-alert
+      failure: lucide/search-x
+      danger: lucide/skull
+      bug: lucide/bug
+      example: lucide/flask-conical
+      quote: lucide/quote
+    previous: lucide/arrow-left
+    next: lucide/arrow-right
+    top: lucide/chevron-up
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: lucide/moon
+        name: ダークモードに切り替え
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: lucide/sun
+        name: ライトモードに切り替え
+  features:
+    - navigation.top
+    - navigation.expand
+    - navigation.sections
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.path
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+extra:
+  github_user: okakaLDS
+  repo_name: sc-docs-lyr
+  repo_url: https://github.com/okakaLDS/sc-docs-lyr
+  site_base_url: https://okakalds.github.io/sc-docs-lyr/
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.snippets:
+      base_path:
+        - snippets
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - awesome-pages
+  - macros
+  - tags:
+      tags_file: tags.md
